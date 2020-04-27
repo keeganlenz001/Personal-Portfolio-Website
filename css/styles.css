@@ -36,11 +36,27 @@ h1 {
     text-align: center;
 }
 
+.opening-quote {
+    margin-top: 25%;
+}
+
+.opening-quote > h1 {
+    font-size: 40px;
+}
+
 nav {
     border: 1px solid black;
     left: 58.33%;
     position: relative;
     text-align: right;
+}
+
+.current-page {
+    background-color: lightseagreen;
+}
+
+.current-page:hover {
+    background-color: lightseagreen;
 }
 
 button {
@@ -55,6 +71,11 @@ button:active {
 
 a {
     border: 1px solid black;
+    width: 20%;
+}
+
+nav > a:hover {
+    background-color: yellow;
 }
 
 a:hover {
@@ -89,13 +110,13 @@ p {
   }
 
 
-  .attribute1{ color: violet; }
+  .attribute1{ color: darkslategray; }
   .attribute2{ color: indigo; }
   .attribute3{ color: slateblue; }
   .attribute4{ color: mediumseagreen; }
 
   .attribute1:before,.attribute1:after {
-      border: 3px solid violet;
+      border: 3px solid darkslategray;
   }
   .attribute2:before,.attribute2:after {
       border: 3px solid indigo;
@@ -127,7 +148,7 @@ p {
   
 
   .attribute1:hover:before, .attribute1:hover:after {
-      background: violet;
+      background: darkslategray;
   }
   .attribute2:hover:before, .attribute2:hover:after {
       background: indigo;
