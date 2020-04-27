@@ -32,17 +32,33 @@
 h1 {
     border: 1px solid black;
     font-family: 'Impact', Impact;
+    font-size: 50px;
     text-align: center;
 }
 
 nav {
+    border: 1px solid black;
     left: 58.33%;
     position: relative;
     text-align: right;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:active {
+    background: green;
+}
+
 a {
     border: 1px solid black;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 p {
@@ -50,3 +66,79 @@ p {
 }
 
 
+.button {
+      border: none;
+      display: inline-block;
+      position: relative;
+      background: transparent;
+      width:200px;
+      height:60px;
+      line-height:60px;
+      text-align:center;
+      font-family:'Arial', sans-serif;
+      font-size:18px;
+      text-decoration:none;
+      margin-left: 4.16%;
+      margin-right:4.16%;
+  }
+  .button:before, .button:after {
+      width:200px;
+      left: 0px;
+      height:27px;
+      z-index: -1;
+  }
+
+
+  .attribute1{ color: violet; }
+  .attribute2{ color: indigo; }
+  .attribute3{ color: slateblue; }
+  .attribute4{ color: mediumseagreen; }
+
+  .attribute1:before,.attribute1:after {
+      border: 3px solid violet;
+  }
+  .attribute2:before,.attribute2:after {
+      border: 3px solid indigo;
+  }
+  .attribute3:before,.attribute3:after {
+      border: 3px solid slateblue;
+  }
+  .attribute4:before,.attribute4:after {
+      border: 3px solid mediumseagreen;
+  }
+  
+  .button:before {
+    position: absolute;
+    content: '';
+    border-bottom: none;
+    -webkit-transform: perspective(15px) rotateX(5deg);
+    -moz-transform: perspective(15px) rotateX(5deg);
+    transform: perspective(15px) rotateX(5deg);  
+  }
+  .button:after {
+    position: absolute;
+    top: 32px;
+    content: '';
+    border-top: none;
+    -webkit-transform: perspective(15px) rotateX(-5deg);
+    -moz-transform: perspective(15px) rotateX(-5deg);
+    transform: perspective(15px) rotateX(-5deg);
+  }
+  
+
+  .attribute1:hover:before, .attribute1:hover:after {
+      background: violet;
+  }
+  .attribute2:hover:before, .attribute2:hover:after {
+      background: indigo;
+  }
+  .attribute3:hover:before, .attribute3:hover:after {
+      background: slateblue;
+  }
+  .attribute4:hover:before, .attribute4:hover:after {
+      background: mediumseagreen;
+  }
+
+  .button:hover {
+      color:#fff;
+  }
