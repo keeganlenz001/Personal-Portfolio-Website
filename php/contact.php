@@ -14,7 +14,7 @@
             <a onclick="window.location.href='index.html'">Home</a>
             <a onclick="window.location.href='about.html'">About</a>
             <a onclick="window.location.href='portfolio.html'">Portfolio</a>
-            <a onclick="window.location.href='documents/keegan-lenz-resume.pdf'">Resume</a>
+            <a onclick="window.location.href='resume.html'">Resume</a>
             <a class="current-page">Contact</a>
         </nav>
         <div class="container">
@@ -38,33 +38,36 @@
 
     <?php
 
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+
         require_once('Mailer/PHPMailerAutoload.php');
 
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'ssl';
+        $mail->SMTPSecure = 'tls';
         $mail->Host = 'smtp.gmail.com';
-        $mail->Port = '465';
-        $mail->isHTML();
+        $mail->Port = '587';
+        $mail->isHTML(true);
         $mail->Username = 'websitemailer0001@gmail.com';
         $mail->Password = 'Kl150072218';
         $mail->SetFrom('websitemailer0001@gmail.com');
-        $mail->Subject = 'Hello';
-        $mail->Body = "From: $fame, $lname\n E-Mail: $email\n Message:\n $message";
-        $mail->AddAddress('Keegan.lenz@student.cart.org');
-
-
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        
+        $mail->Subject = 'PHP Mailer Subject';
+        $mail->Body = "Email: $email \n From: $fname $lname \n Message: $message";
+        $mail->AddAddress('Keegan.lenz@student.cart.org');        
 
         if ($_POST['submit']) {
-            $mail->Send();
-            echo '<p class="confirmation">Your message has been sent!</p>';
-        }
+            $mail->send();
+            if (!$mail->send()) {
+            echo "<p class='confirmation'>Message could not be sent!<p>";
+            } else {
+                echo "<p class='confirmation'>Message has been sent!<p>";
+            }
+        }        
 
     ?>
     

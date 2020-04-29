@@ -75,6 +75,7 @@ button:active {
 
 a {
     border: 1px solid black;
+    font-family: 'Arial', sans-serif;
     width: 20%;
 }
 
@@ -168,7 +169,23 @@ a:hover {
     margin-top: 25%;
 }
 
-  form {
+.resume > p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.LinkedIn {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.digital-file {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.resume > ul{
+    font: "Times New Roman", Times, serif;
+}
+
+form {
     margin:0 auto;
     width:459px;
 }

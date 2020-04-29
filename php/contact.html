@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    
     <div class="page-wrapper">
         <nav class="col-5">
             <a onclick="window.location.href='index.html'">Home</a>
@@ -17,7 +18,7 @@
             <a class="current-page">Contact</a>
         </nav>
         <div class="container">
-            <form method="post" action="php/index.php">
+            <form method="post" action="contact.php">
               <label for="fname">First Name:</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
@@ -27,11 +28,10 @@
               <label for="email">Email Adress:</label>
               <input id="email" name="email" placeholder="Your email adress..">
           
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
           
               <input id="submit" name="submit" type="submit" value="Submit">
-              
             </form>
           </div>
     </div>
