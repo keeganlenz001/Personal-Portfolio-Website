@@ -28,8 +28,8 @@
               <label for="email">Email Adress:</label>
               <input id="email" name="email" placeholder="Your email adress..">
           
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
           
               <input id="submit" name="submit" type="submit" value="Submit">
             </form>
@@ -51,18 +51,19 @@
         $mail->Password = 'Kl150072218';
         $mail->SetFrom('websitemailer0001@gmail.com');
         $mail->Subject = 'Hello';
-        $mail->Body = "From: $name\n E-Mail: $email\n Message:\n $message";
+        $mail->Body = "From: $fame, $lname\n E-Mail: $email\n Message:\n $message";
         $mail->AddAddress('Keegan.lenz@student.cart.org');
 
 
-        $name = $_POST['name'];
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
         $email = $_POST['email'];
         $message = $_POST['message'];
         
 
         if ($_POST['submit']) {
             $mail->Send();
-            echo '<p>Your message has been sent!</p>';
+            echo '<p class="confirmation">Your message has been sent!</p>';
         }
 
     ?>
