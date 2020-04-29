@@ -44,6 +44,10 @@ h1 {
     font-size: 40px;
 }
 
+p {
+    font-family: 'Arial', sans-serif;
+}
+
 nav {
     border: 1px solid black;
     left: 58.33%;
@@ -80,10 +84,6 @@ nav > a:hover {
 
 a:hover {
     cursor: pointer;
-}
-
-p {
-    font-family: 'Arial Black', sans-serif;
 }
 
 
@@ -163,3 +163,53 @@ p {
   .button:hover {
       color:#fff;
   }
+
+.container {
+    margin-top: 25%;
+}
+
+  form {
+    margin:0 auto;
+    width:459px;
+}
+
+label {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the text boxes */
+input, textarea {
+	width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+textarea {
+	height:213px;
+}
+
+#submit {
+    width:439px;
+    height:38px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+#submit:hover {
+    background-color: green;
+}
