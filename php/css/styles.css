@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Impact:300,600);
+@import url(https://fonts.googleapis.com/css?family=sans-serif:300,600);
+
 * {
     box-sizing: border-box;
 }
@@ -26,8 +29,9 @@
     flex-wrap: wrap;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Impact:300,600);
-@import url(https://fonts.googleapis.com/css?family=sans-serif:300,600);
+.opening-quote > h1 {
+    font-family: "Calibri";
+}
 
 h1 {
     border: 1px solid black;
@@ -44,8 +48,13 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-family: 'Verdana';
+}
+
 p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Calibri';
+    font-size: 18px;
 }
 
 nav {
@@ -97,11 +106,13 @@ a:hover {
       height:60px;
       line-height:60px;
       text-align:center;
-      font-family:'Arial', sans-serif;
-      font-size:18px;
+      font-family:'Calibri';
+      font-size:20px;
       text-decoration:none;
       margin-left: 4.16%;
       margin-right:4.16%;
+      margin-top: 5px;
+      margin-bottom: 5px;
   }
   .button:before, .button:after {
       width:200px;
@@ -165,12 +176,32 @@ a:hover {
       color:#fff;
   }
 
+.attribute1-next {
+    margin-left: 8.35%;
+    margin-right: 0;
+}
+
+.attribute4-previous {
+    margin-left: 8.35%;
+    margin-right: 0;
+}
+
 .container {
     margin-top: 25%;
 }
 
 .resume > p {
     font-family: "Times New Roman", Times, serif;
+}
+
+.resume-title > h2 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.resume-location > h3 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
 }
 
 .LinkedIn {
@@ -182,7 +213,7 @@ a:hover {
 }
 
 .resume > ul{
-    font: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 form {
