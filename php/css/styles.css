@@ -83,8 +83,8 @@ button:active {
 }
 
 a {
-    border: 1px solid black;
     font-family: 'Arial', sans-serif;
+    margin-left: 5%;
     width: 20%;
 }
 
@@ -216,6 +216,27 @@ a:hover {
     font-family: "Times New Roman", Times, serif;
 }
 
+.email-link {
+    color: blue;
+    font-family: "Calibri";
+    margin-left: 0;
+}
+
+.LinkedIn {
+    margin-left: 0;
+    margin-right: 2%;
+}
+
+.logo1{
+    width: 100px;
+    height: 100px;
+}
+
+.logo2{
+    width: 100px;
+    height: 100px;
+}
+
 form {
     margin:0 auto;
     width:459px;
@@ -225,7 +246,6 @@ label {
     font-family: 'Arial', sans-serif;
 }
 
-/* Style the text boxes */
 input, textarea {
 	width:439px;
     height:27px;
