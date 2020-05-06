@@ -16,21 +16,30 @@
             <a onclick="window.location.href='resume.html'">Resume</a>
             <a onclick="window.location.href='contact.php'">Contact</a>
         </nav>
+        
         <header class="portfolio-header">
             <h1>My Portfolio</h1>
         </header>
+
         <header class="story-project-title">
-            <h2>The Choose Your Own Adventure Story</h2>
+            <h2 class="col-6">The Choose Your Own Adventure Story</h2>
         </header>
+
+        <div class="adventure-story-info">
         <p class="col-6">The digital choose your own adventure story project was our first major project that we made in the Web Application Development course at the Center for Advanced Research and Technology, or CART. </p>
         <p class="col-6">This project taught me a lot about JavaScript and permutations. Because the story is not linear, we must be able to code the program more efficiently, otherwise it would be extremely complicated to make a story with more than a few branches. To do this we needed to use objects. This would essentially give each piece of dialogue a variable, so if you click a button based on your choice, the button would lead to the specific dialogue with the specific variable. In other words, we avoided having to type out each permutation, by instead making the code much more flexible and interactive.</p>
-        
+        </div>
+
         <header class="board-game-project-title">
-            <h2>The Digital Board Game</h2>
+            <h2 class="col-6">The Digital Board Game</h2>
         </header>
+
+        <div class="digital-board-game-info">
             <p class="col-6">When making a board game, you’re less so actually making a board game, and more so making the rules to a board game. Really, all a board game is a series of rules that a player must follow, and through following these rules they play the game. In my case, I had to make the game stratego, which is essentially a chess-like game that involves building your army and strategically making advancements to try to capture your enemies pieces and eventually capture your opponent's flag. However, the assignment also required that we make a few changes to our game to try to make the game more fun and interesting, but to also show mastery in coding.</p>
             <p class="col-6">Building a board game is no easy feat, though, as it took many revisions of the board game on pen and paper, until I felt that the game was well thought out enough to be properly coded. To make rules for a board game, you don’t make rules the way you think that you might. There is no method in JavaScript that says “change turn” or “capture piece”. Instead you have to make these rules from the ground up, so you have to find creative ways for when a turn will change, or how a piece will be captured. Without going too much into detail, one example of how I was able to make turns in the game, to ensure that players couldn’t make more than one move at a time, I said in code that every time a piece is dropped on the board, a square will change from red to blue, or vise versa. This square not only indicates for the players whose turn it’s, but it also allows the code to basically switch off the pieces of the opposite colors. So when the square is red, all the blue pieces can no longer move. So with that code in place, players now must take turns when playing the game.</p>
             <p class="col-6">Still, I’d be lying if I said that this project is done. There are still many rules that must be implemented for this game to function properly. While there are many great and creative rules that I was able to implement, you can still move pieces anywhere you want,(with a few exceptions) and capturing pieces is still very buggy. You can still play the game, but instead of the code following the games rules, you will have to, and this is not something you want in a digital board game, as it easily allows for players to cheat. I hope that maybe one day I might come back to this project and fix it, however until then it’s a project that has many great ideas in it, but is still not foolproof. However, although the project didn’t end on the prettiest of notes, there is much that I learned during this project, not just about coding, but how to prepare and execute a plan for a massive project like this one. I also learned a lot about teamwork, and I was able to improve my cohesion with my partner a lot throughout the project.</p>
+        </div>
+
     </div>
 </body>
 </html>

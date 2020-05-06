@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #04303b;
+}
+
 .page-wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -34,7 +38,10 @@
 }
 
 h1 {
+    background-color: #0db4Ba; 
     border: 1px solid black;
+    box-shadow: 4px 4px 4px black;
+    color: #04303B;
     font-family: 'Impact', Impact;
     font-size: 50px;
     text-align: center;
@@ -49,12 +56,42 @@ h1 {
 }
 
 h2 {
+    background-color: #0db4ba;
+    box-shadow: 4px 4px 4px black;
+    color: #fff;
     font-family: 'Verdana';
+    padding: 10px;
+}
+
+.self-description-header > h2 {
+    margin-bottom: -20px;
+}
+
+.story-project-title > h2 {
+    margin-top: 40px;
+}
+
+.board-game-poject-title > h2 {
+    margin-top: 40px;
 }
 
 p {
+    background-color: #49c1c6;
+    box-shadow: 4px 4px 4px black;
+    color: #fff;
     font-family: 'Calibri';
-    font-size: 18px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.adventure-story-info > p{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.digital-board-game-info > p {
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -122,23 +159,19 @@ a:hover {
   }
 
 
-  .attribute1{ color: darkslategray; }
-  .attribute2{ color: indigo; }
-  .attribute3{ color: slateblue; }
-  .attribute4{ color: mediumseagreen; }
+  .attribute1,
+  .attribute2,
+  .attribute3,
+  .attribute4
+  { color: #B7fff1; }
+  
 
-  .attribute1:before,.attribute1:after {
-      border: 3px solid darkslategray;
-  }
-  .attribute2:before,.attribute2:after {
-      border: 3px solid indigo;
-  }
-  .attribute3:before,.attribute3:after {
-      border: 3px solid slateblue;
-  }
-  .attribute4:before,.attribute4:after {
-      border: 3px solid mediumseagreen;
-  }
+  .attribute1:before,.attribute1:after,
+  .attribute2:before,.attribute2:after,
+  .attribute3:before,.attribute3:after,
+  .attribute4:before,.attribute4:after 
+  { border: 3px solid #49c1c6; }
+  
   
   .button:before {
     position: absolute;
@@ -159,18 +192,11 @@ a:hover {
   }
   
 
-  .attribute1:hover:before, .attribute1:hover:after {
-      background: darkslategray;
-  }
-  .attribute2:hover:before, .attribute2:hover:after {
-      background: indigo;
-  }
-  .attribute3:hover:before, .attribute3:hover:after {
-      background: slateblue;
-  }
-  .attribute4:hover:before, .attribute4:hover:after {
-      background: mediumseagreen;
-  }
+  .attribute1:hover:before, .attribute1:hover:after,
+  .attribute2:hover:before, .attribute2:hover:after,
+  .attribute3:hover:before, .attribute3:hover:after,
+  .attribute4:hover:before, .attribute4:hover:after 
+  { background: #49c1c6; }
 
   .button:hover {
       color:#fff;
