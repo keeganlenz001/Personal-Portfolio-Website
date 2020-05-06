@@ -95,18 +95,17 @@ p {
 }
 
 nav {
-    border: 1px solid black;
     left: 58.33%;
     position: relative;
     text-align: right;
 }
 
 .current-page {
-    background-color: lightseagreen;
+    background-color: #098387;
 }
 
 .current-page:hover {
-    background-color: lightseagreen;
+    background-color: #098387;
 }
 
 button {
@@ -125,8 +124,24 @@ a {
     width: 20%;
 }
 
+nav > a {
+    background-color: #0db4ba;
+    border-right: 1px solid #fff;
+    box-shadow: 4px 4px 4px black;
+    color: #fff;
+    font-family: 'Calibri';
+    font-size: 25px;
+    margin-left: -0.75%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+nav > a:nth-child(1) {
+    border-left: 1px solid #fff;
+}
+
 nav > a:hover {
-    background-color: yellow;
+    background-color: #64cfd3;
 }
 
 a:hover {
@@ -163,7 +178,7 @@ a:hover {
   .attribute2,
   .attribute3,
   .attribute4
-  { color: #B7fff1; }
+  { color: #b7fff1; }
   
 
   .attribute1:before,.attribute1:after,

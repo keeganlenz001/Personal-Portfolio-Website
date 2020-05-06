@@ -17,13 +17,17 @@
             <a onclick="window.location.href='resume.html'">Resume</a>
             <a class="current-page">Contact</a>
         </nav>
+
         <header class="contact-header">
             <h1>Contact</h1>
         </header>
-        <h2 class="get-in-touch-header">How To Get In Touch With Me</h2>
-        <p class="get-in-touch">If you want to get in touch with me, feel free to send an email to <a class="email-link"><u>keegan.lenz@student.cart.org</u></a></p>
+
+        <h2 class="col-5">How To Get In Touch With Me</h2>
+        <p class="col-5">If you want to get in touch with me, feel free to send an email to <a class="email-link"><u>keegan.lenz@student.cart.org</u></a></p>
+
         <br>
-        <h2 class="social-medias">Follow My Social Medias</h2>
+
+        <h2 class="col-5">Follow My Social Medias</h2>
         <a class="LinkedIn" href="https://www.linkedin.com/in/keegan-lenz-0569441a2">
             <img class="logo1" src="images/LinkedIn.png" alt="LinkedInLogo">
         </a>
@@ -33,6 +37,7 @@
         </a>
 
         <div class="container">
+
             <form method="post" action="contact.php">
               <label for="fname">First Name:</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -48,7 +53,9 @@
           
               <input id="submit" name="submit" type="submit" value="Submit">
             </form>
+
           </div>
+
     </div>
 
     <?php
