@@ -75,6 +75,24 @@ h2 {
     margin-top: 40px;
 }
 
+.resume {
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.66%;
+}
+
+.resume > header > h2 {
+    background-color: white;
+    box-shadow: none;
+    color: black;
+}
+
+.resume > h3 {
+    background-color: white;
+    box-shadow: none;
+    color: black;
+}
+
 p {
     background-color: #49c1c6;
     box-shadow: 4px 4px 4px black;
@@ -92,6 +110,12 @@ p {
 .digital-board-game-info > p {
     margin-top: -20px;
     margin-bottom: 20px;
+}
+
+.resume > p {
+    background-color: white;
+    box-shadow: none;
+    color: black;
 }
 
 nav {
@@ -229,6 +253,13 @@ a:hover {
 
 .container {
     margin-top: 25%;
+}
+
+.resume {
+    background-color: white;
+    box-shadow: 4px 4px 4px black;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 .resume > p {
