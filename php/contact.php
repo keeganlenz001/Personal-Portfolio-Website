@@ -23,8 +23,10 @@
             <h1>Contact</h1>
         </header>
 
-        <h2 class="col-5">How To Get In Touch With Me</h2>
-        <p class="col-5">If you want to get in touch with me, feel free to send an email to <a class="email-link"><u>keegan.lenz@student.cart.org</u></a></p>
+        <div class="contact-me">
+            <h2 class="col-5">How To Get In Touch With Me</h2>
+            <p class="col-5">If you want to get in touch with me, feel free to send an email to <a class="email-link"><u>keegan.lenz@student.cart.org</u></a></p>
+        </div>
 
         <br>
 

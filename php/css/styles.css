@@ -26,7 +26,6 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-.col-s {width: 49%;}
 
 .row {
     display: flex;
@@ -202,7 +201,7 @@ a:hover {
   .attribute2,
   .attribute3,
   .attribute4
-  { color: #b7fff1; }
+  { box-shadow: 0 16px 12px -12px black; color: #b7fff1; }
   
 
   .attribute1:before,.attribute1:after,
@@ -242,17 +241,13 @@ a:hover {
   }
 
 .attribute1-next {
-    margin-left: 8.35%;
+    margin-left: 41.66%;
     margin-right: 0;
 }
 
 .attribute4-previous {
     margin-left: 8.35%;
     margin-right: 0;
-}
-
-.container {
-    margin-top: 25%;
 }
 
 .resume {
@@ -288,6 +283,10 @@ a:hover {
     font-family: "Times New Roman", Times, serif;
 }
 
+.contact-me > p {
+    margin-top: -20px;
+}
+
 .email-link {
     color: blue;
     font-family: "Calibri";
@@ -309,51 +308,68 @@ a:hover {
     height: 100px;
 }
 
+.container {
+    margin-top: -348px;
+    position: relative;
+}
+
 form {
-    margin:0 auto;
-    width:459px;
+    background-color: #0db4ba;
+    box-shadow: 4px 4px 4px black;
+    margin-left: auto;
+    margin-bottom: auto;
+    position: relative;
+    width: 420px;
 }
 
 label {
-    font-family: 'Arial', sans-serif;
+    color: #fff;
+    font-family: 'Calibri';
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 input, textarea {
-	width:439px;
-    height:27px;
-    background:#efefef;
-    border:1px solid #dedede;
-    padding:10px;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+	width: 400px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 3px;
+    font-family: 'Calibri';
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 input:focus, textarea:focus {
-    border:1px solid #97d6eb;
+    border: 1px solid #04303b;
 }
 
 textarea {
-	height:213px;
+	height: 200px;
 }
 
 #submit {
-    width:439px;
-    height:38px;
-    border:none;
-    margin-top:20px;
-    cursor:pointer;
+    background-color: #098387;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Calibri';
+    font-size: 20px;
+    width: 400px;
+    height: 38px;
+    margin-top: -20px;
 }
 
 #submit:hover {
-    background-color: green;
+    background-color: #49c1c6;
 }
 
 .confirmation {
+    font-family: 'Calibri';
+    font-size: 18px;
     text-align: center;
 }
