@@ -11,7 +11,7 @@
 <body>
 
     <div class="page-wrapper">
-        <nav class="col-5">
+        <nav>
             <a onclick="window.location.href='index.html'">Home</a>
             <a onclick="window.location.href='about.html'">About</a>
             <a onclick="window.location.href='portfolio.html'">Portfolio</a>

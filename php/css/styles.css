@@ -1,6 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Impact:300,600);
 @import url(https://fonts.googleapis.com/css?family=sans-serif:300,600);
 
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+     }
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -32,12 +43,17 @@ body {
     flex-wrap: wrap;
 }
 
+.home-page {
+    overflow: hidden;
+}
+
 .opening-quote > h1 {
     font-family: "Calibri";
+    margin-top: -10%;
 }
 
 h1 {
-    background-color: #0db4Ba; 
+    background-color: #0db4ba; 
     border: 1px solid black;
     box-shadow: 4px 4px 4px black;
     color: #04303B;
@@ -54,6 +70,36 @@ h1 {
     font-size: 40px;
 }
 
+.home-button {
+    animation: shadow-pulse 1.5s infinite;
+    background-color: #0db4ba;
+    color: #04303b;
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 37.5%;
+    margin-top: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+}
+
+.home-button:hover {
+    background-color: #49c1c6;
+    cursor: pointer;
+}
+
+.background-image {
+    left:0;
+    top:0;
+    position: absolute;
+    opacity: 0.1;
+    overflow: hidden;
+    width: 100%;
+    z-index:-2;
+}
+
+
+
 h2 {
     background-color: #0db4ba;
     box-shadow: 4px 4px 4px black;
@@ -66,6 +112,8 @@ h2 {
     margin-bottom: -20px;
 }
 
+
+
 .story-project-title > h2 {
     margin-top: 40px;
 }
@@ -73,6 +121,8 @@ h2 {
 .board-game-poject-title > h2 {
     margin-top: 40px;
 }
+
+
 
 .resume {
     margin-left: auto;
@@ -92,6 +142,8 @@ h2 {
     color: black;
 }
 
+
+
 p {
     background-color: #49c1c6;
     box-shadow: 4px 4px 4px black;
@@ -100,6 +152,8 @@ p {
     font-size: 20px;
     padding: 10px;
 }
+
+
 
 .adventure-story-info > p{
     margin-top: -20px;
@@ -111,16 +165,21 @@ p {
     margin-bottom: 20px;
 }
 
+
+
 .resume > p {
     background-color: white;
     box-shadow: none;
     color: black;
 }
 
+
+
 nav {
-    left: 58.33%;
+    margin-left: 0;
     position: relative;
     text-align: right;
+    width: 100%;
 }
 
 .current-page {
@@ -130,6 +189,8 @@ nav {
 .current-page:hover {
     background-color: #098387;
 }
+
+
 
 button {
     border: none;
@@ -143,7 +204,7 @@ button:active {
 
 a {
     font-family: 'Arial', sans-serif;
-    margin-left: 5%;
+    margin-left: 5px;
     width: 20%;
 }
 
@@ -154,9 +215,9 @@ nav > a {
     color: #fff;
     font-family: 'Calibri';
     font-size: 25px;
-    margin-left: -0.75%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    margin-left: -4px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav > a:nth-child(1) {
@@ -250,6 +311,8 @@ a:hover {
     margin-right: 0;
 }
 
+
+
 .image-expla {
     margin-top: -40px;
 }
@@ -310,6 +373,8 @@ a:hover {
     width: 839px;
 }
 
+
+
 .resume {
     background-color: white;
     box-shadow: 4px 4px 4px black;
@@ -330,6 +395,8 @@ a:hover {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
+
+
 
 .LinkedIn {
     font-family: "Times New Roman", Times, serif;
