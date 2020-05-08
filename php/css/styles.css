@@ -250,6 +250,66 @@ a:hover {
     margin-right: 0;
 }
 
+.image-expla {
+    margin-top: -40px;
+}
+
+.personality-test > p > a{
+    color: #04303b;
+    font-size: 18px;
+    margin-left: 0;
+}
+
+.personality-test > p > a:visited {
+    color: purple;
+}
+
+.architect {
+    position: absolute;
+    margin-left: 580px;
+    margin-top: -347px;
+}
+
+.personality {
+    position: absolute;
+    margin-left: 979px;
+    margin-top: -347px;
+}
+
+.personality > img {
+    box-shadow: 4px 4px 4px black;
+    width: 300px;
+}
+
+.hard-work {
+    box-shadow: 4px 4px 4px black;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: -352px;
+    width: 639px;
+}
+
+.problem-solve {
+    position: absolute;
+    margin-left: 640px;
+    margin-top: -424px;
+    width: 639px;
+}
+
+.fast-learn {
+    position: absolute;
+    margin-left: 640px;
+    margin-top: -352px;
+    width: 639px;
+}
+
+.team-play {
+    position: absolute;
+    margin-left: 604px;
+    margin-top: -530px;
+    width: 839px;
+}
+
 .resume {
     background-color: white;
     box-shadow: 4px 4px 4px black;
