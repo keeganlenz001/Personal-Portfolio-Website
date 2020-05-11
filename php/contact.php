@@ -23,21 +23,23 @@
             <h1>Contact</h1>
         </header>
 
-        <div class="contact-me">
-            <h2 class="col-5">How To Get In Touch With Me</h2>
-            <p class="col-5">If you want to get in touch with me, feel free to send an email to <u><a class="email-link" href="mailto:keegan.lenz@student.cart.org">keegan.lenz@student.cart.org</a></u></p>
+        <div class="contact">
+            <div class="contact-me">
+                <h2 class="col-5">How To Get In Touch With Me</h2>
+                <p class="col-5">If you want to get in touch with me, feel free to send an email to <u><a class="email-link" href="mailto:keegan.lenz@student.cart.org">keegan.lenz@student.cart.org</a></u></p>
+            </div>
+
+            <br>
+
+            <h2 class="col-5">Follow My Social Medias</h2>
+            <a class="LinkedIn" href="https://www.linkedin.com/in/keegan-lenz-0569441a2">
+                <img class="logo1" src="images/LinkedIn.png" alt="LinkedInLogo">
+            </a>
+
+            <a class="Github" href="https://github.com/keeganlenz001">
+                <img class="logo2" src="images/Github.png" alt="GithubLogo">
+            </a>
         </div>
-
-        <br>
-
-        <h2 class="col-5">Follow My Social Medias</h2>
-        <a class="LinkedIn" href="https://www.linkedin.com/in/keegan-lenz-0569441a2">
-            <img class="logo1" src="images/LinkedIn.png" alt="LinkedInLogo">
-        </a>
-
-        <a class="Github" href="https://github.com/keeganlenz001">
-            <img class="logo2" src="images/Github.png" alt="GithubLogo">
-        </a>
 
         <div class="container">
 
@@ -57,7 +59,7 @@
               <input id="submit" name="submit" type="submit" value="Submit">
             </form>
 
-          </div>
+        </div>
 
     </div>
 

@@ -445,8 +445,6 @@ a:hover {
     text-align: center;
 }
 
-
-
 .LinkedIn {
     font-family: "Times New Roman", Times, serif;
 }
@@ -459,8 +457,17 @@ a:hover {
     font-family: "Times New Roman", Times, serif;
 }
 
+
+
+.contact-me > h2 {
+    position: relative;
+    z-index: 1;
+}
+
 .contact-me > p {
     margin-top: -20px;
+    position: relative;
+    z-index: 1;
 }
 
 .email-link {
@@ -469,10 +476,22 @@ a:hover {
     margin-left: 0;
 }
 
+.contact > h2 {
+    position: relative;
+    z-index: 1;
+}
+
 .LinkedIn {
     color: #04303b;
     margin-left: 0;
     margin-right: 2%;
+    position: relative;
+    z-index: 1;
+}
+
+.Github {
+    position: relative;
+    z-index: 1;
 }
 
 .logo1 {
@@ -498,7 +517,6 @@ a:hover {
 .container {
     margin-top: -348px;
     position: relative;
-    z-index: -1;
 }
 
 form {
