@@ -226,6 +226,10 @@ a:hover {
 }
 
 
+.attribute-nav > nav{
+    margin-left: 58.34%;
+}
+
 .button {
       border: none;
       display: inline-block;
