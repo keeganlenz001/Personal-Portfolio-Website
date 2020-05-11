@@ -47,11 +47,6 @@ body {
     overflow: hidden;
 }
 
-.opening-quote > h1 {
-    font-family: "Calibri";
-    margin-top: -10%;
-}
-
 h1 {
     background-color: #0db4ba; 
     border: 1px solid black;
@@ -62,12 +57,10 @@ h1 {
     text-align: center;
 }
 
-.opening-quote {
-    margin-top: 25%;
-}
-
 .opening-quote > h1 {
-    font-size: 40px;
+    font-family: "Calibri";
+    font-size: 60px;
+    margin-top: 15%;
 }
 
 .home-button {
@@ -77,7 +70,7 @@ h1 {
     font-family: 'Arial Black';
     font-size: 40px;
     margin-left: 37.5%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 25%;
@@ -92,7 +85,7 @@ h1 {
     left:0;
     top:0;
     position: absolute;
-    opacity: 0.1;
+    opacity: 0.2;
     overflow: hidden;
     width: 100%;
     z-index:-2;
@@ -360,6 +353,7 @@ a:hover {
 }
 
 .fast-learn {
+    box-shadow: 4px 4px 4px black;
     position: absolute;
     margin-left: 640px;
     margin-top: -352px;
@@ -371,6 +365,61 @@ a:hover {
     margin-left: 604px;
     margin-top: -530px;
     width: 839px;
+}
+
+.adventure-story {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adventure-story-info > h2 {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.board-game {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.digital-board-game-info > h2 {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.in-story-image {
+    opacity: 0.4;
+}
+
+.in-story-image:hover {
+    opacity: 0.6;
+}
+
+.in-game-image {
+    opacity: 0.4;
+}
+
+.in-game-image:hover {
+    opacity: 0.6;
+}
+
+.overlay {
+    color: #fff;
+    font-family: 'Calibri';
+    font-size: 30px;
+    margin-top: -50%;
+    opacity: 0.8;
+    pointer-events: none;
+    position: relative;
+    text-align: center;
 }
 
 
@@ -421,23 +470,35 @@ a:hover {
 }
 
 .LinkedIn {
+    color: #04303b;
     margin-left: 0;
     margin-right: 2%;
 }
 
-.logo1{
+.logo1 {
+    opacity: 0.8;
     width: 100px;
     height: 100px;
 }
 
-.logo2{
+.logo1:hover {
+    opacity: 1;
+}
+
+.logo2 {
+    opacity: 0.8;
     width: 100px;
     height: 100px;
+}
+
+.logo2:hover {
+    opacity: 1;
 }
 
 .container {
     margin-top: -348px;
     position: relative;
+    z-index: -1;
 }
 
 form {
@@ -465,7 +526,7 @@ input, textarea {
     margin-top: 3px;
     font-family: 'Calibri';
     font-size: 18px;
-    color: #fff;
+    color: #04303b;
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -498,5 +559,10 @@ textarea {
 .confirmation {
     font-family: 'Calibri';
     font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
+    width: 420px;
 }
