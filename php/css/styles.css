@@ -20,6 +20,10 @@ body {
     background-color: #04303b;
 }
 
+.about-page {
+    overflow: hidden;
+}
+
 .page-wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -43,8 +47,24 @@ body {
     flex-wrap: wrap;
 }
 
-.home-page {
-    overflow: hidden;
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -1;
+}
+
+#bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
 }
 
 h1 {
@@ -99,10 +119,6 @@ h2 {
     color: #fff;
     font-family: 'Verdana';
     padding: 10px;
-}
-
-.self-description-header > h2 {
-    margin-bottom: -20px;
 }
 
 
@@ -230,27 +246,41 @@ a:hover {
     margin-left: 58.34%;
 }
 
+.attributes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagon-buttons {
+    display: inline-block;
+}
+
 .button {
       border: none;
-      display: inline-block;
+      display: inline-table;
       position: relative;
       background: transparent;
-      width:200px;
-      height:60px;
-      line-height:60px;
-      text-align:center;
-      font-family:'Calibri';
-      font-size:20px;
-      text-decoration:none;
-      margin-left: 4.16%;
-      margin-right:4.16%;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-family: 'Calibri';
+      font-size: 18px;
+      text-decoration: none;
+      margin-right: 15px;
+      margin-left: 15px;
       margin-top: 5px;
       margin-bottom: 5px;
   }
+  /* .button:nth-child(2), .button:nth-child(4) {
+      background-color: white;
+      margin-right: 0;
+  } */
   .button:before, .button:after {
-      width:200px;
+      width: 100%;
       left: 0px;
-      height:27px;
+      height: 27px;
       z-index: -1;
   }
 
@@ -298,20 +328,111 @@ a:hover {
       color:#fff;
   }
 
-.attribute1-next {
-    margin-left: 41.66%;
-    margin-right: 0;
+.attribute1-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.attribute4-previous {
-    margin-left: 8.35%;
-    margin-right: 0;
+.attribute1-paragraph {
+    margin-right: 20px;
+    margin-top: -20px;
+    width: 50%;
 }
 
 
+.attribute2-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.image-expla {
-    margin-top: -40px;
+.attribute2-paragraph {
+    margin-right: 20px;
+    margin-top: -20px;
+    width: 50%;
+}
+
+
+.attribute3-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.attribute3-paragraph {
+    margin-right: 20px;
+    margin-top: -20px;
+    width: 50%;
+}
+
+.attribute3-image {
+    box-shadow: 4px 4px 4px black;
+}
+
+
+.attribute4-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.attribute4-paragraph {
+    margin-right: 20px;
+    margin-top: -20px;
+    width: 50%;
+}
+
+.attribute1-image > img {
+    box-shadow: 4px 4px 4px black;
+}
+
+.attribute-next {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.attribute1-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attribute-previous {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*nav */
+
+.about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.personality-test {
+    margin-top: -20px;
+    width: 50%;
+}
+
+.personality-test > h2 {
+    margin-bottom: -20px;
 }
 
 .personality-test > p > a{
@@ -320,25 +441,20 @@ a:hover {
     margin-left: 0;
 }
 
-.personality-test > p > a:visited {
-    color: purple;
-}
-
 .architect {
-    position: absolute;
-    margin-left: 580px;
-    margin-top: -347px;
+    margin-bottom: 100%;
 }
 
 .personality {
-    position: absolute;
-    margin-left: 979px;
-    margin-top: -347px;
+    margin-bottom: 100%;
 }
 
-.personality > img {
-    box-shadow: 4px 4px 4px black;
-    width: 300px;
+.image-expla {
+    margin-top: -40px;
+}
+
+.personality-test > p > a:visited {
+    color: purple;
 }
 
 .hard-work {
@@ -371,6 +487,8 @@ a:hover {
     width: 839px;
 }
 
+
+
 .adventure-story {
     display: flex;
     align-items: flex-start;
@@ -382,7 +500,12 @@ a:hover {
 
 .adventure-story-info > h2 {
     margin: 0;
+    margin-right: 20px;
     padding-bottom: 30px;
+}
+
+.adventure-story-info > p {
+    margin-right: 20px;
 }
 
 .board-game {
@@ -396,7 +519,12 @@ a:hover {
 
 .digital-board-game-info > h2 {
     margin: 0;
+    margin-right: 20px;
     padding-bottom: 30px;
+}
+
+.digital-board-game-info > p {
+    margin-right: 20px;
 }
 
 .in-story-image {
@@ -419,13 +547,19 @@ a:hover {
     color: #fff;
     font-family: 'Calibri';
     font-size: 30px;
-    margin-top: -50%;
     opacity: 0.8;
     pointer-events: none;
     position: relative;
     text-align: center;
 }
 
+.adventure-story-image > .overlay {
+    margin-top: -37.5%;
+}
+
+.board-game-image > .overlay {
+    margin-top: -55%;
+}
 
 
 .resume {
