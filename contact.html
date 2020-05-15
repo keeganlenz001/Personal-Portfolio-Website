@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact - Keegan Lenz's Personal Portfolio Website</title>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+
     <div class="page-wrapper">
-        <nav class="col-5">
+        <nav>
             <a onclick="window.location.href='index.html'">Home</a>
             <a onclick="window.location.href='about.html'">About</a>
             <a onclick="window.location.href='portfolio.html'">Portfolio</a>
-            <a onclick="window.location.href='documents/keegan-lenz-resume.pdf'">Resume</a>
+            <a onclick="window.location.href='resume.html'">Resume</a>
             <a class="current-page">Contact</a>
         </nav>
+
+        <header class="contact-header">
+            <h1>Contact</h1>
+        </header>
+
+        <div class="contact">
+            <div class="contact-me">
+                <h2 class="col-5">How To Get In Touch With Me</h2>
+                <p class="col-5">If you want to get in touch with me, feel free to send an email to <u><a class="email-link" href="mailto:keegan.lenz@student.cart.org">keegan.lenz@student.cart.org</a></u></p>
+            </div>
+
+            <br>
+
+            <h2 class="col-5">Follow My Social Medias</h2>
+            <a class="LinkedIn" href="https://www.linkedin.com/in/keegan-lenz-0569441a2">
+                <img class="logo1" src="images/LinkedIn.png" alt="LinkedInLogo">
+            </a>
+
+            <a class="Github" href="https://github.com/keeganlenz001">
+                <img class="logo2" src="images/Github.png" alt="GithubLogo">
+            </a>
+        </div>
+
         <div class="container">
-            <form method="post" action="contact.php">
+
+            <form method="post" action="contact.js">
               <label for="fname">First Name:</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
@@ -33,7 +58,9 @@
           
               <input id="submit" name="submit" type="submit" value="Submit">
             </form>
-          </div>
+
+        </div>
+
     </div>
     
 </body>

@@ -273,10 +273,6 @@ a:hover {
       margin-top: 5px;
       margin-bottom: 5px;
   }
-  /* .button:nth-child(2), .button:nth-child(4) {
-      background-color: white;
-      margin-right: 0;
-  } */
   .button:before, .button:after {
       width: 100%;
       left: 0px;
@@ -413,8 +409,6 @@ a:hover {
     display: flex;
     justify-content: flex-start;
 }
-
-/*nav */
 
 .about {
     display: flex;

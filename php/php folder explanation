@@ -1,9 +1,0 @@
-The php folder houses all the other folders and files, so that they can be used for my local server, or in my case, my pc's command prompt.
-The actual php code is required in order to make a contact form.
-As of now the contact form should theoretically work, however, for whatever reason, no emails can be sent.
-
-The php code is supposed to take the answers submitted in the contact form and then use the php mailer from github to send the data to a gmail account.
-Using this data, an email will be made using the data submitted in the contact form, and this email will be sent to my CART gmail, so that I would be able to see who the person is that used the contact form, what their gmail is, and what message or comment they said.
-After many different tutorials, I feel that I have done everything right, but still no emails can be sent.
-
-I tried :(
