@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="home-page">
     <div class="page-wrapper">
 
         <header class="opening-quote">
@@ -17,9 +17,37 @@
         
         <button class="home-button" onclick="window.location.href='about.html'">Continue</button>
 
-        <div id="bg">
+        <div class="slideshow-container">
+
+        <div class="slides fade">
             <img class="background-image" src="images/home-image.jpg" alt="background-image">
         </div>
+
+        <div class="slides fade">
+            <img class="background-image" src="images/home-image2.jpeg" alt="background-image">
+        </div>
+
+        <div class="slides fade">
+            <img class="background-image" src="images/home-image3.png" alt="background-image">
+        </div>
+    
+        </div>
+
+        <div class="arrow-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        
+        <script src="js/script.js"></script>
+
+        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 
     </div>
 </body>
