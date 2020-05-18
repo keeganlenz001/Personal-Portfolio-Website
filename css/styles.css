@@ -682,6 +682,38 @@ a:hover {
 }
 
 
+.letter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 66.66%;
+}
+
+.letter-of-recomendation {
+    background-color: white;
+    box-shadow: 4px 4px 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 66.66%;
+}
+
+.letter-of-recomendation > header > p, .recomendation > p, .letter-of-recomendation > footer > p {
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin: 0;
+    margin-top: -15px;
+}
+
+.recomendation-content {
+    text-indent: 50px;
+}
+
+
 
 .contact-me > h2 {
     position: relative;
@@ -779,7 +811,8 @@ input:focus, textarea:focus {
 }
 
 textarea {
-	height: 200px;
+    height: 200px;
+    resize: none;
 }
 
 #submit {
