@@ -14,7 +14,7 @@
 @keyframes shadow-pulse
 {
      0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.6);
      }
      100% {
           box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
@@ -28,10 +28,6 @@
 
 body {
     background-color: #04303b;
-}
-
-.about-page {
-    overflow: hidden;
 }
 
 .page-wrapper {
@@ -171,24 +167,29 @@ h1 {
 
 .opening-quote > h1 {
     font-family: "Calibri";
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 15%;
 }
 
 .home-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-button > button {
     animation: shadow-pulse 1.5s infinite;
     background-color: #0db4ba;
     color: #04303b;
     font-family: 'Arial Black';
-    font-size: 40px;
-    margin-left: 37.5%;
+    font-size: 30px;
     margin-top: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 25%;
 }
 
-.home-button:hover {
+.home-button > button:hover {
     background-color: #49c1c6;
     cursor: pointer;
 }
@@ -224,12 +225,6 @@ h2 {
 }
 
 
-
-.resume {
-    margin-left: auto;
-    margin-right: auto;
-    width: 66.66%;
-}
 
 .resume > header > h2 {
     background-color: white;
@@ -333,9 +328,9 @@ a:hover {
     cursor: pointer;
 }
 
-
-.attribute-nav > nav{
-    margin-left: 58.34%;
+.attribute-nav{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .attributes {
@@ -416,7 +411,7 @@ a:hover {
       color:#fff;
   }
 
-.attribute1-content {
+.attribute1-content, .attribute2-content, .attribute3-content, .attribute4-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -425,62 +420,13 @@ a:hover {
     margin-right: auto;
 }
 
-.attribute1-paragraph {
+.attribute1-paragraph, .attribute2-paragraph, .attribute3-paragraph, .attribute4-paragraph {
     margin-right: 20px;
     margin-top: -20px;
-    width: 50%;
 }
 
-
-.attribute2-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.attribute2-paragraph {
-    margin-right: 20px;
-    margin-top: -20px;
-    width: 50%;
-}
-
-
-.attribute3-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.attribute3-paragraph {
-    margin-right: 20px;
-    margin-top: -20px;
-    width: 50%;
-}
-
-.attribute3-image {
+.attribute3-image > img {
     box-shadow: 4px 4px 4px black;
-}
-
-
-.attribute4-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.attribute4-paragraph {
-    margin-right: 20px;
-    margin-top: -20px;
-    width: 50%;
 }
 
 .attribute1-image > img {
@@ -490,6 +436,16 @@ a:hover {
 .attribute-next {
     display: flex;
     justify-content: flex-end;
+}
+
+.attribute-next-prev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attribute-prev {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .attribute1-4 {
@@ -527,12 +483,19 @@ a:hover {
     margin-left: 0;
 }
 
-.architect {
-    margin-bottom: 100%;
+.test-images {
+    display: flex;
+    justify-content: space-between;
 }
 
-.personality {
+.architect > img {
     margin-bottom: 100%;
+    width: 200px;
+}
+
+.personality > img {
+    margin-bottom: 100%;
+    width: 200px;
 }
 
 .image-expla {
@@ -543,37 +506,9 @@ a:hover {
     color: purple;
 }
 
-.hard-work {
-    box-shadow: 4px 4px 4px black;
-    position: absolute;
-    margin-left: 640px;
-    margin-top: -352px;
-    width: 639px;
+.attribute1-image > img, .attribute2-image > img, .attribute3-image > img, .attribute4-image > img {
+    width: 400px;
 }
-
-.problem-solve {
-    position: absolute;
-    margin-left: 640px;
-    margin-top: -424px;
-    width: 639px;
-}
-
-.fast-learn {
-    box-shadow: 4px 4px 4px black;
-    position: absolute;
-    margin-left: 640px;
-    margin-top: -352px;
-    width: 639px;
-}
-
-.team-play {
-    position: absolute;
-    margin-left: 604px;
-    margin-top: -530px;
-    width: 839px;
-}
-
-
 
 .adventure-story {
     display: flex;
@@ -648,11 +583,15 @@ a:hover {
 }
 
 
+
 .resume {
     background-color: white;
     box-shadow: 4px 4px 4px black;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    width: 66.66%;
 }
 
 .resume > p {
@@ -715,14 +654,26 @@ a:hover {
 
 
 
+.contact-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    margin-right: 20px;
+}
+
 .contact-me > h2 {
-    position: relative;
+    margin-top: 0px;
     z-index: 1;
 }
 
 .contact-me > p {
     margin-top: -20px;
-    position: relative;
     z-index: 1;
 }
 
@@ -733,7 +684,7 @@ a:hover {
 }
 
 .contact > h2 {
-    position: relative;
+    margin-top: -20px;
     z-index: 1;
 }
 
@@ -741,12 +692,10 @@ a:hover {
     color: #04303b;
     margin-left: 0;
     margin-right: 2%;
-    position: relative;
     z-index: 1;
 }
 
 .Github {
-    position: relative;
     z-index: 1;
 }
 
@@ -770,18 +719,10 @@ a:hover {
     opacity: 1;
 }
 
-.container {
-    margin-top: -348px;
-    position: relative;
-}
-
 form {
     background-color: #0db4ba;
     box-shadow: 4px 4px 4px black;
-    margin-left: auto;
-    margin-bottom: auto;
-    position: relative;
-    width: 420px;
+    width: 400px;
 }
 
 label {
@@ -792,7 +733,7 @@ label {
 }
 
 input, textarea {
-	width: 400px;
+	width: 380px;
     height: 40px;
     background: #fff;
     border: none;
@@ -822,7 +763,7 @@ textarea {
     cursor: pointer;
     font-family: 'Calibri';
     font-size: 20px;
-    width: 400px;
+    width: 380px;
     height: 38px;
     margin-left: 10px;
     margin-top: -20px;
@@ -831,4 +772,84 @@ textarea {
 
 #submit:hover {
     background-color: #49c1c6;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .opening-quote > h1 {
+        font-size: 40px;
+    }
+
+    .home-button > button {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personality-test {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .test-images {
+        width: 100%;
+    }
+
+    .architect, .personality {
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .attribute1-image > img, .attribute2-image > img, .attribute3-image > img, .attribute4-image > img {
+        width: 200px;
+    }
+
+    .adventure-story {
+        flex-direction: column;
+    }
+
+    .adventure-story-info > p, .adventure-story-info > h2 {
+        margin: 0;
+    }
+
+    .adventure-story-image {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .board-game {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .digital-board-game-info > p, .digital-board-game-info > h2 {
+        margin: 0;
+    }
+
+    .board-game-image {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .resume, .letter, .letter-of-recomendation {
+        width: 91.66%;
+    }
+
+    form {
+        width: 200px;
+    }
+
+    input, textarea, #submit {
+        width: 180px;
+    }
 }
