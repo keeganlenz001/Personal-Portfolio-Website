@@ -272,10 +272,10 @@ p {
 
 
 nav {
-    margin-left: 0;
+    margin-left: auto;
     position: relative;
     text-align: right;
-    width: 100%;
+    width: 575px;
 }
 
 .current-page {
@@ -436,6 +436,10 @@ a:hover {
 .attribute-next {
     display: flex;
     justify-content: flex-end;
+}
+
+.attribute-next2 {
+    display: none;
 }
 
 .attribute-next-prev {
@@ -722,6 +726,7 @@ a:hover {
 form {
     background-color: #0db4ba;
     box-shadow: 4px 4px 4px black;
+    padding-top: 5px;
     width: 400px;
 }
 
@@ -851,5 +856,172 @@ textarea {
 
     input, textarea, #submit {
         width: 180px;
+    }
+}
+
+
+
+@media only screen and (max-width: 605px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .opening-quote > h1 {
+        font-size: 30px;
+    }
+
+    .home-button > button {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        width: 372px;
+    }
+
+    nav > a {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hexagon-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .architect > img{
+        width: 100px;
+    }
+
+    .personality > img {
+        width: 150px;
+    }
+
+    .attribute-next, .attribute-next-prev, .attribute-prev {
+        display: none;
+    }
+
+    .attribute1-content, .attribute2-content, .attribute3-content, .attribute4-content {
+        flex-direction: column;
+    }
+
+    .attribute1-paragraph, .attribute2-paragraph, .attribute3-paragraph, .attribute4-paragraph {
+        margin-right: 0px;
+    }
+
+    .attribute1-image, .attribute2-image, .attribute3-image, .attribute4-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .attribute4-image, .attribute-prev2 {
+        margin-top: -20px;
+    }
+
+    .attribute-next2, .attribute-prev2 {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .attribute-next2 {
+        margin-top: 10px;
+    }
+
+    .attribute-next-prev2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .adventure-story-info > h2, .digital-board-game-info > h2 {
+        padding-bottom: 10px;
+    }
+
+    .in-story-image, .in-game-image {
+        width: 250px;
+    }
+
+    .overlay {
+        margin-left: 5px;
+    }
+
+    .resume, .letter, .letter-of-recomendation {
+        width: 100%;
+    }
+
+    .contact, .contact-me > h2, .contact-me > p, .social-medias-header {
+        width: 100%;
+    }
+
+    .letter-of-recomendation header > p, .recomendation > p, .letter-of-recomendation > footer > p {
+        font-size: 14px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-medias {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+    }
+
+    .Github {
+        margin-right: 44px;
+    }
+
+    .contact-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    form {
+        margin-top: 20px;
+        width: 280px;
+    }
+
+    input, textarea, #submit {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 402px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    nav > a {
+        border-left: 1px solid white;
+        font-size: 20px;
+        margin-bottom: 1px;
+        width: 105px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
