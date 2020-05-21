@@ -92,7 +92,7 @@ body {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  margin-top: -20%;
+  margin-top: -10%;
   width: auto;
   padding: 16px;
   color: #fff;
@@ -438,7 +438,7 @@ a:hover {
     justify-content: flex-end;
 }
 
-.attribute-next2 {
+.attribute-next2, .attribute-next-prev2, .attribute-prev2 {
     display: none;
 }
 
@@ -780,9 +780,7 @@ textarea {
 }
 
 
-
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 888px) {
     .opening-quote > h1 {
         font-size: 40px;
     }
@@ -861,7 +859,7 @@ textarea {
 
 
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 688px) {
     h1 {
         font-size: 30px;
     }
