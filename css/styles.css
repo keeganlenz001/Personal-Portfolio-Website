@@ -813,29 +813,24 @@ textarea {
         flex-direction: column;
     }
 
-    .adventure-story-info > p, .adventure-story-info > h2 {
+    .adventure-story-info > p, .adventure-story-info > h2, .digital-board-game-info > p, .digital-board-game-info > h2, .zen-garden-info > p, .zen-garden-info > h2, .computing-innovation-info > p, .computing-innovation-info > h2 {
         margin: 0;
     }
 
-    .adventure-story-image {
+    .adventure-story-image, .board-game-image, .zen-garden-image, .computing-innovation-image {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 
-    .board-game {
+    .board-game, .computing-innovation {
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
-    .digital-board-game-info > p, .digital-board-game-info > h2 {
-        margin: 0;
-    }
-
-    .board-game-image {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
+    .CSS-zen-garden {
+        flex-direction: column;
+        margin-top: 275px;
     }
     
     .resume, .letter, .letter-of-recomendation {
@@ -940,11 +935,11 @@ textarea {
         margin-top: 30px;
     }
 
-    .adventure-story-info > h2, .digital-board-game-info > h2 {
+    .adventure-story-info > h2, .digital-board-game-info > h2, .zen-garden-info > h2, .computing-innovation-info > h2 {
         padding-bottom: 10px;
     }
-
-    .in-story-image, .in-game-image {
+    
+    .in-story-image, .in-game-image, .in-garden-image, .in-innovation-image {
         width: 250px;
     }
 
